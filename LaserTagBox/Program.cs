@@ -34,7 +34,7 @@ internal static class Program
         // USER: Specify JSON configuration file here
         var file = File.ReadAllText("config.json");
         var config = SimulationConfig.Deserialize(file);
-        
+
         for (int i = 0; i < 1; i++)
         {
             var starter = SimulationStarter.Start(description, config);
